@@ -18,7 +18,9 @@ This repository contains replication materials (code, outputs, and an anonymised
 2. Run cells in order to reproduce descriptive statistics, reliability, CFA, HTMT, and mediation analyses.
 
 ## Data and ethics
-The dataset shared here is anonymised and does not contain direct identifiers. Any potentially identifying free-text fields were excluded.
+This repository includes **code and an anonymised dataset** sufficient to reproduce the analyses reported in the manuscript.
+
+To protect participant confidentiality, the shared dataset excludes direct identifiers and potentially identifying fields (e.g., timestamps, names, contact details, free-text responses such as job titles and “other/specify” entries). The dataset contains only the analytic variables required for replication (e.g., item-level indicators and non-identifying categorical demographics where applicable).
 
 ## Citation
 If you use these materials, please cite the associated article (citation to be added upon publication).
