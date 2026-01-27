@@ -1,0 +1,20 @@
+variable,category,n,percent
+gender,Male / ذكر,260,63.3
+gender,Female / أنثى,151,36.7
+age_group,40–49 / من 40 إلى 49 سنة,297,72.3
+age_group,30–39 / من 30 إلى 39 سنة,52,12.7
+age_group,50 or older / 50 سنة أو أكثر,46,11.2
+age_group,Under 30 / أقل من 30 سنة,9,2.2
+age_group,Missing,7,1.7
+organisation_type,Private Hospital / مستشفى خاص,353,85.9
+organisation_type,Private Health Company / شركة صحية خاصة,39,9.5
+organisation_type,NGO / منظمة غير حكومية,5,1.2
+organisation_type,Governorate Health Directorate / مديرية الصحة بالمحافظة,4,1.0
+organisation_type,Public Hospital / مستشفى عام,4,1.0
+organisation_type,Missing,4,1.0
+organisation_type,Other (please specify) / أخرى (يرجى التحديد),2,0.5
+experience_years_group,More than 15 years / أكثر من 15 سنة,367,89.3
+experience_years_group,11–15 years / من 11 إلى 15 سنة,32,7.8
+experience_years_group,5–10 years / من 5 إلى 10 سنوات,8,1.9
+experience_years_group,Less than 5 years / أقل من 5 سنوات,3,0.7
+experience_years_group,Missing,1,0.2
