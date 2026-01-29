@@ -24,3 +24,11 @@ To protect participant confidentiality, the shared dataset excludes direct ident
 
 ## Citation
 If you use these materials, please cite the associated article (citation to be added upon publication).
+
+## Repository
+GitHub: https://github.com/A2022KR/strategic-planning-resilience-egypt
+
+## How to reproduce
+1. Open `notebooks/analysis_colab.ipynb`
+2. Install requirements (or run the install cell)
+3. Run all cells to regenerate outputs in `outputs/`
