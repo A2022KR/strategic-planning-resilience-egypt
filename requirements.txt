@@ -1,4 +1,6 @@
-pandas>=2.0
-numpy>=1.24
-scipy>=1.10
-matplotlib>=3.7
+# Versions used to produce the committed outputs
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+python-docx==1.2.0

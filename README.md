@@ -1,61 +1,69 @@
-# Strategic Planning and Institutional Resilience in Cairo's Health Sector — Replication Package
+# Strategic Planning and Institutional Resilience in Cairo's Health Sector
 
-Code, anonymised data and outputs for the manuscript:
+[![Reproduce analysis](https://github.com/A2022KR/strategic-planning-resilience-egypt/actions/workflows/reproduce.yml/badge.svg)](https://github.com/A2022KR/strategic-planning-resilience-egypt/actions/workflows/reproduce.yml)
+
+Replication package for:
 
 **"Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management"**
-Ahmed Hamza and Mahmoud S. Abousekken, Environmental Studies and Research Institute (ESRI), University of Sadat City.
-Ethical approval: REC/ESRI/USC/10/20-05-2025.
+Ahmed Hamza ([ORCID 0009-0006-2101-7866](https://orcid.org/0009-0006-2101-7866)) and Mahmoud S. Abousekken ([ORCID 0000-0002-2544-616X](https://orcid.org/0000-0002-2544-616X)), Environmental Studies and Research Institute (ESRI), University of Sadat City, Egypt.
+Ethical approval: REC/ESRI/USC/10/20-05-2025. Prepared for submission to *BMC Health Services Research*.
 
 ## Contents
 
 | Path | What it is |
 |---|---|
-| `data/sem_df.csv` | Anonymised analytic dataset: 416 respondents × 20 Likert items (`sp1`–`sp10`, `cd1`–`cd5`, `ir1`–`ir5`) plus coarsened demographics and response-style flags |
-| `data/codebook.csv` | Variable definitions, including full English and Arabic item wording |
+| `data/sem_df.csv` | Anonymised analytic dataset: 416 respondents × 20 Likert items (`sp1`–`sp10`, `cd1`–`cd5`, `ir1`–`ir5`), coarsened demographics, and the flags `screening`, `straightline` and `duplicate_profile` |
+| `data/codebook.csv` | Variable definitions, including the full English and Arabic item wording |
 | `data/demographics_summary.csv` | Aggregated sample profile (Table 1) |
-| `scripts/01_prepare_data.py` | Builds `data/` from the raw Google Form export (raw export not shared) |
-| `scripts/02_descriptives_mediation.py` | Descriptives, reliability, response-style diagnostics, observed-score bootstrap mediation |
-| `scripts/03_cfa_sem.R` | Ordinal CFA (WLSMV), CR/AVE, HTMT, model comparison and latent mediation SEM |
+| `scripts/01_prepare_data.py` | Builds `data/` from the raw Google Form export (the raw export is not shared) |
+| `scripts/02_descriptives_mediation.py` | Descriptives, reliability, response-style diagnostics, Harman test, bootstrap mediation |
+| `scripts/03_cfa_sem.R` | Ordinal CFA (WLSMV), CR/AVE, HTMT, model comparison, latent mediation, method-factor and alternative models, RMSEA power |
 | `scripts/04_figures.py` | Figures 1–2 |
-| `scripts/05_build_manuscript.py` | Fills manuscript tables from `outputs/`, numbers references, exports `.docx` |
+| `scripts/05_build_manuscript.py` | Fills the manuscript tables from `outputs/`, numbers references, exports the submission `.docx` files |
+| `scripts/install_r_packages.R` | Installs the pinned R package versions |
+| `tests/check_reproducibility.py` | Confirms that re-running the pipeline reproduces the committed outputs |
 | `outputs/` | All result tables (CSV) |
 | `figures/` | Manuscript figures (PNG, PDF) |
-| `manuscript/` | Manuscript source (`manuscript.md`, `references.csv`) and built files in `manuscript/build/` |
-| `notebooks/analysis_colab.ipynb` | Runs the whole pipeline in Google Colab |
+| `manuscript/` | Manuscript source (`manuscript.md`, `references.csv`, `cover_letter.md`, `checklists/`) |
+| `manuscript/build/` | Submission files: manuscript, Additional files 1–3 (supplementary tables, STROBE, CHERRIES), cover letter, figures |
+| `notebooks/analysis_colab.ipynb` | Runs the pipeline in Google Colab |
 
 ## Reproduce
 
+Requirements: Python 3.13, R 4.3, pandoc.
+
 ```bash
-pip install -r requirements.txt
-# R >= 4.1 with: install.packages(c("lavaan", "semTools"))
-
-# Only the authors can run step 1 (needs the raw export):
-# python scripts/01_prepare_data.py path/to/raw_form_responses.csv
-
-python scripts/02_descriptives_mediation.py
-Rscript scripts/03_cfa_sem.R
-python scripts/04_figures.py
-python scripts/05_build_manuscript.py   # needs pandoc for .docx output
+make install     # pip install -r requirements.txt; pinned lavaan 0.6-17 and semTools 0.5-6
+make all         # analysis -> figures -> manuscript/build/
 ```
 
-Results were produced with Python 3.11 (pandas, NumPy, SciPy, Matplotlib) and R 4.3 with lavaan 0.6-17 and semTools 0.5-6. Random seeds are fixed.
+To confirm the committed results reproduce:
+
+```bash
+cp -r outputs /tmp/outputs_committed && make all && make check  # or: python tests/check_reproducibility.py /tmp/outputs_committed
+```
+
+The GitHub Actions workflow `Reproduce analysis` runs these steps on every push and pull request and uploads the built submission files as an artifact. Only the authors can run step 1, which needs the raw export: `make data RAW=path/to/export.csv`.
 
 ## Analysis samples
 
-Every model is estimated in three samples, identified by columns in `sem_df.csv`:
+Every model is estimated in four samples, identified by columns in `sem_df.csv`:
 
-- **Full sample** (N = 416): all complete responses. The 23 respondents who failed the eligibility question never saw the questionnaire.
-- **Screened only** (`screening == "yes"`, n = 342): excludes 74 respondents who answered before the eligibility question was added on 20 July 2025.
-- **Excluding straight-liners** (`straightline == 0`, n = 207): excludes respondents who gave the same answer to all 20 items (207 of the 209 answered 7 throughout).
+| Sample | Definition | n |
+|---|---|---|
+| Full sample | All complete responses; the 23 respondents who failed the eligibility question never saw the questionnaire | 416 |
+| Screened respondents | `screening == "yes"`; excludes 74 who answered before the eligibility question was added (20 July 2025) | 342 |
+| Excluding straight-liners | `straightline == 0`; excludes respondents with the same answer on all 20 items | 207 |
+| Excluding repeat profiles | `duplicate_profile == 0`; excludes submissions identical to an earlier one on all demographics, job title and items | 255 |
 
 ## Data and ethics
 
-The shared dataset contains no direct identifiers: timestamps, job titles and "other/specify" free text are removed. Organisation type, age and experience are coarsened into broad groups. Row order follows submission time, but the timestamps themselves are not included.
+Participation was voluntary and anonymous, and informed consent was obtained on the first page of the questionnaire. The shared dataset contains no direct identifiers: timestamps, job titles and free text are removed, and organisation type, age and experience are coarsened. Job titles were used only to flag repeat submissions and are not exported. The raw export is available from the corresponding author on reasonable request, subject to ethics committee approval.
 
 ## Correction notice (October 2026)
 
-An earlier version of this repository contained a `sem_df.csv` that could not be traced back to the raw survey export. Five of its strategic-planning columns were empty, so reported strategic-planning results used only 5 of the 10 items. That file and all outputs derived from it have been replaced. `data/sem_df.csv` is now rebuilt from the raw Google Form export by `scripts/01_prepare_data.py`, and every output is regenerated by the scripts above.
+An earlier version of this repository contained a `sem_df.csv` that could not be traced back to the raw survey export. Five of its strategic-planning columns were empty, so reported strategic-planning results used only 5 of the 10 items. That file and all outputs derived from it have been replaced. The dataset is now rebuilt from the raw export by `scripts/01_prepare_data.py`, and every output is regenerated by the scripts above.
 
-## Citation
+## Citation and licence
 
-Please cite the associated article (citation to be added on publication).
+Citation metadata is in `CITATION.cff` (GitHub's "Cite this repository" button) and `.zenodo.json` (used when the repository is archived on Zenodo for a DOI). Code and data are released under the MIT licence (`LICENSE`).
