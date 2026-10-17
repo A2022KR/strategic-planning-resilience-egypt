@@ -18,15 +18,15 @@ Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examin
 | | Incentives | None |
 | | Time/date | 14 June–10 August 2025 |
 | | Randomisation of items or questionnaires | No; fixed item order |
-| | Adaptive questioning | No. From 20 July 2025 an eligibility question opened the form; the 23 respondents answering "No" submitted without answering the items |
+| | Adaptive questioning | Yes. From 20 July 2025 an eligibility question opened the form; respondents answering "No" (n = 23) were routed out before the questionnaire |
 | | Number of items | 1 screening question, 5 demographic questions (including job title) and 20 Likert items |
-| | Number of screens (pages) | One page |
+| | Number of screens (pages) | All questionnaire items on one page (preceded, from 20 July 2025, by the eligibility question) |
 | | Completeness check | No missing Likert responses among the 416 analysed submissions |
 | | Review step | Yes; respondents could review and change answers before submitting |
 | **Response rates** | Unique site visitor | Not available (Google Forms does not record visitors) |
 | | View rate | Not available |
 | | Participation rate | Not available (open link) |
-| | Completion rate | 416 of 439 submissions completed the questionnaire (the remaining 23 answered "No" to the eligibility question and left the items blank) |
+| | Completion rate | 416 of 439 submissions completed the questionnaire (the remaining 23 answered "No" to the eligibility question and were routed out) |
 | **Preventing multiple entries from the same individual** | Cookies used | No |
 | | IP check | No |
 | | Log file analysis | No |

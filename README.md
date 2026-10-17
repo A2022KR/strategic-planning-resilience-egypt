@@ -51,7 +51,7 @@ Every model is estimated in four samples, identified by columns in `sem_df.csv`:
 
 | Sample | Definition | n |
 |---|---|---|
-| Full sample | All complete responses; the 23 respondents who answered "No" to the eligibility question left the items blank | 416 |
+| Full sample | All complete responses; the 23 respondents who answered "No" to the eligibility question were routed out before the questionnaire | 416 |
 | Screened respondents | `screening == "yes"`; excludes 74 who answered before the eligibility question was added (20 July 2025) | 342 |
 | Excluding straight-liners | `straightline == 0`; excludes respondents with the same answer on all 20 items | 207 |
 | Excluding repeat profiles | `duplicate_profile == 0`; excludes submissions identical to an earlier one on all demographics, job title and items | 255 |
