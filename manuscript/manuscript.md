@@ -2,11 +2,9 @@
 title: "Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management"
 ---
 
-**Ahmed Hamza**^1,2\*^ (ORCID 0009-0006-2101-7866) and **Mahmoud S. Abousekken**^1^ (ORCID 0000-0002-2544-616X)
+**Ahmed Hamza**^1\*^ (ORCID 0009-0006-2101-7866) and **Mahmoud S. Abousekken**^1^ (ORCID 0000-0002-2544-616X)
 
 ^1^ Environmental Studies and Research Institute (ESRI), University of Sadat City, Sadat City, Menoufia, Egypt
-
-^2^ ESLSCA University, Cairo, Egypt
 
 \*Corresponding author: Ahmed Hamza, ahmed.hamza\@esri.usc.edu.eg
 
