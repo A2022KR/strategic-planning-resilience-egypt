@@ -1,0 +1,10 @@
+"Sample","Construct","CompositeReliability","AVE"
+"Full sample","SP",0.962,0.839
+"Full sample","CD",0.963,0.9
+"Full sample","IR",0.941,0.863
+"Screened 'Yes' only","SP",0.964,0.852
+"Screened 'Yes' only","CD",0.965,0.916
+"Screened 'Yes' only","IR",0.945,0.87
+"Excluding straight-liners","SP",0.933,0.709
+"Excluding straight-liners","CD",0.947,0.82
+"Excluding straight-liners","IR",0.909,0.749

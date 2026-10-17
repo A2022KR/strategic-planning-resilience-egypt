@@ -1,0 +1,19 @@
+"Sample","N","Path","Std_estimate","p","MC_CI_lower","MC_CI_upper","R2_CD","R2_IR"
+"Full sample",416,"a",0.922,0,NA,NA,0.85,0.949
+"Full sample",416,"b",0.916,0,NA,NA,0.85,0.949
+"Full sample",416,"cp",0.062,0.464,NA,NA,0.85,0.949
+"Full sample",416,"ind",0.845,0,0.694,0.998,0.85,0.949
+"Full sample",416,"total",0.907,0,0.873,0.941,0.85,0.949
+"Full sample",416,"prop",0.931,0,0.752,1.119,0.85,0.949
+"Screened 'Yes' only",342,"a",0.922,0,NA,NA,0.85,0.946
+"Screened 'Yes' only",342,"b",0.885,0,NA,NA,0.85,0.946
+"Screened 'Yes' only",342,"cp",0.094,0.309,NA,NA,0.85,0.946
+"Screened 'Yes' only",342,"ind",0.816,0,0.651,0.985,0.85,0.946
+"Screened 'Yes' only",342,"total",0.91,0,0.875,0.944,0.85,0.946
+"Screened 'Yes' only",342,"prop",0.897,0,0.704,1.097,0.85,0.946
+"Excluding straight-liners",207,"a",0.846,0,NA,NA,0.715,0.892
+"Excluding straight-liners",207,"b",0.904,0,NA,NA,0.715,0.892
+"Excluding straight-liners",207,"cp",0.047,0.605,NA,NA,0.715,0.892
+"Excluding straight-liners",207,"ind",0.765,0,0.613,0.923,0.715,0.892
+"Excluding straight-liners",207,"total",0.812,0,0.749,0.872,0.715,0.892
+"Excluding straight-liners",207,"prop",0.942,0,0.733,1.174,0.715,0.892

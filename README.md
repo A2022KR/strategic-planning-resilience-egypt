@@ -1,34 +1,61 @@
-# Strategic Planning and Institutional Resilience in Egypt — Replication Package
+# Strategic Planning and Institutional Resilience in Cairo's Health Sector — Replication Package
 
-This repository contains replication materials (code, outputs, and an anonymised dataset) for the study:
-**“Strategic Planning and Institutional Resilience in Egypt’s Public Health Sector”**.
+Code, anonymised data and outputs for the manuscript:
+
+**"Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management"**
+Ahmed Hamza and Mahmoud S. Abousekken, Environmental Studies and Research Institute (ESRI), University of Sadat City.
+Ethical approval: REC/ESRI/USC/10/20-05-2025.
 
 ## Contents
-- `data/` — anonymised analytic dataset (item-level indicators only) and codebook
-- `notebooks/` — Google Colab / Jupyter notebook used for the main analyses
-- `scripts/` — helper scripts (Python and R) for CFA (WLSMV), HTMT, and mediation
-- `outputs/` — tables and figures reported in the manuscript
 
-## Software
-- Python (Google Colab), 주요 packages: pandas, numpy, statsmodels, pingouin
-- R (optional): lavaan, semTools (for ordinal CFA using WLSMV)
+| Path | What it is |
+|---|---|
+| `data/sem_df.csv` | Anonymised analytic dataset: 416 respondents × 20 Likert items (`sp1`–`sp10`, `cd1`–`cd5`, `ir1`–`ir5`) plus coarsened demographics and response-style flags |
+| `data/codebook.csv` | Variable definitions, including full English and Arabic item wording |
+| `data/demographics_summary.csv` | Aggregated sample profile (Table 1) |
+| `scripts/01_prepare_data.py` | Builds `data/` from the raw Google Form export (raw export not shared) |
+| `scripts/02_descriptives_mediation.py` | Descriptives, reliability, response-style diagnostics, observed-score bootstrap mediation |
+| `scripts/03_cfa_sem.R` | Ordinal CFA (WLSMV), CR/AVE, HTMT, model comparison and latent mediation SEM |
+| `scripts/04_figures.py` | Figures 1–2 |
+| `scripts/05_build_manuscript.py` | Fills manuscript tables from `outputs/`, numbers references, exports `.docx` |
+| `outputs/` | All result tables (CSV) |
+| `figures/` | Manuscript figures (PNG, PDF) |
+| `manuscript/` | Manuscript source (`manuscript.md`, `references.csv`) and built files in `manuscript/build/` |
+| `notebooks/analysis_colab.ipynb` | Runs the whole pipeline in Google Colab |
 
-## Reproducibility
-1. Open `notebooks/analysis_colab.ipynb` in Google Colab.
-2. Run cells in order to reproduce descriptive statistics, reliability, CFA, HTMT, and mediation analyses.
+## Reproduce
+
+```bash
+pip install -r requirements.txt
+# R >= 4.1 with: install.packages(c("lavaan", "semTools"))
+
+# Only the authors can run step 1 (needs the raw export):
+# python scripts/01_prepare_data.py path/to/raw_form_responses.csv
+
+python scripts/02_descriptives_mediation.py
+Rscript scripts/03_cfa_sem.R
+python scripts/04_figures.py
+python scripts/05_build_manuscript.py   # needs pandoc for .docx output
+```
+
+Results were produced with Python 3.11 (pandas, NumPy, SciPy, Matplotlib) and R 4.3 with lavaan 0.6-17 and semTools 0.5-6. Random seeds are fixed.
+
+## Analysis samples
+
+Every model is estimated in three samples, identified by columns in `sem_df.csv`:
+
+- **Full sample** (N = 416): all complete responses. The 23 respondents who failed the eligibility question never saw the questionnaire.
+- **Screened only** (`screening == "yes"`, n = 342): excludes 74 respondents who answered before the eligibility question was added on 20 July 2025.
+- **Excluding straight-liners** (`straightline == 0`, n = 207): excludes respondents who gave the same answer to all 20 items (207 of the 209 answered 7 throughout).
 
 ## Data and ethics
-This repository includes **code and an anonymised dataset** sufficient to reproduce the analyses reported in the manuscript.
 
-To protect participant confidentiality, the shared dataset excludes direct identifiers and potentially identifying fields (e.g., timestamps, names, contact details, free-text responses such as job titles and “other/specify” entries). The dataset contains only the analytic variables required for replication (e.g., item-level indicators and non-identifying categorical demographics where applicable).
+The shared dataset contains no direct identifiers: timestamps, job titles and "other/specify" free text are removed. Organisation type, age and experience are coarsened into broad groups. Row order follows submission time, but the timestamps themselves are not included.
+
+## Correction notice (October 2026)
+
+An earlier version of this repository contained a `sem_df.csv` that could not be traced back to the raw survey export. Five of its strategic-planning columns were empty, so reported strategic-planning results used only 5 of the 10 items. That file and all outputs derived from it have been replaced. `data/sem_df.csv` is now rebuilt from the raw Google Form export by `scripts/01_prepare_data.py`, and every output is regenerated by the scripts above.
 
 ## Citation
-If you use these materials, please cite the associated article (citation to be added upon publication).
 
-## Repository
-GitHub: https://github.com/A2022KR/strategic-planning-resilience-egypt
-
-## How to reproduce
-1. Open `notebooks/analysis_colab.ipynb`
-2. Install requirements (or run the install cell)
-3. Run all cells to regenerate outputs in `outputs/`
+Please cite the associated article (citation to be added on publication).

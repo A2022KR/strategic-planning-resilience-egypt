@@ -1,0 +1,31 @@
+Specification,N,Path,B,CI_lower,CI_upper
+Full sample,416,a (SP→CD),1.151,1.022,1.292
+Full sample,416,b (CD→IR | SP),0.796,0.589,1.027
+Full sample,416,c′ (SP→IR | CD),0.301,-0.011,0.581
+Full sample,416,c (total SP→IR),1.217,1.079,1.34
+Full sample,416,indirect (a×b),0.916,0.652,1.221
+Full sample,416,proportion mediated,0.753,0.536,1.01
+Full sample + controls,402,a (SP→CD),1.173,1.018,1.335
+Full sample + controls,402,b (CD→IR | SP),0.791,0.588,1.04
+Full sample + controls,402,c′ (SP→IR | CD),0.299,-0.04,0.582
+Full sample + controls,402,c (total SP→IR),1.227,1.059,1.367
+Full sample + controls,402,indirect (a×b),0.928,0.654,1.277
+Full sample + controls,402,proportion mediated,0.756,0.536,1.034
+Screened 'Yes' only,342,a (SP→CD),1.159,1.015,1.321
+Screened 'Yes' only,342,b (CD→IR | SP),0.785,0.565,1.041
+Screened 'Yes' only,342,c′ (SP→IR | CD),0.335,-0.004,0.625
+Screened 'Yes' only,342,c (total SP→IR),1.245,1.096,1.38
+Screened 'Yes' only,342,indirect (a×b),0.91,0.622,1.248
+Screened 'Yes' only,342,proportion mediated,0.731,0.505,1.003
+Excluding straight-liners,207,a (SP→CD),1.142,0.99,1.309
+Excluding straight-liners,207,b (CD→IR | SP),0.793,0.588,1.022
+Excluding straight-liners,207,c′ (SP→IR | CD),0.269,-0.074,0.567
+Excluding straight-liners,207,c (total SP→IR),1.174,0.992,1.319
+Excluding straight-liners,207,indirect (a×b),0.906,0.639,1.218
+Excluding straight-liners,207,proportion mediated,0.771,0.541,1.068
+Excluding straight-liners + controls,199,a (SP→CD),1.17,0.978,1.367
+Excluding straight-liners + controls,199,b (CD→IR | SP),0.79,0.593,1.044
+Excluding straight-liners + controls,199,c′ (SP→IR | CD),0.26,-0.147,0.563
+Excluding straight-liners + controls,199,c (total SP→IR),1.185,0.945,1.342
+Excluding straight-liners + controls,199,indirect (a×b),0.925,0.642,1.294
+Excluding straight-liners + controls,199,proportion mediated,0.78,0.545,1.135
