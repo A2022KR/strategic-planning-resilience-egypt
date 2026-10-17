@@ -1,0 +1,13 @@
+"Sample","Pair","HTMT"
+"Full sample","SP-CD",0.933
+"Full sample","SP-IR",0.913
+"Full sample","CD-IR",0.981
+"Screened 'Yes' only","SP-CD",0.929
+"Screened 'Yes' only","SP-IR",0.913
+"Screened 'Yes' only","CD-IR",0.974
+"Excluding straight-liners","SP-CD",0.863
+"Excluding straight-liners","SP-IR",0.808
+"Excluding straight-liners","CD-IR",0.964
+"Excluding repeat profiles","SP-CD",0.898
+"Excluding repeat profiles","SP-IR",0.862
+"Excluding repeat profiles","CD-IR",0.972

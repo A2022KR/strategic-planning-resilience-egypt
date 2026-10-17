@@ -1,0 +1,13 @@
+"Sample","Pair","r","ci_lower","ci_upper"
+"Full sample","SP-CD",0.922,0.896,0.947
+"Full sample","SP-IR",0.907,0.873,0.941
+"Full sample","CD-IR",0.974,0.957,0.991
+"Screened 'Yes' only","SP-CD",0.922,0.895,0.949
+"Screened 'Yes' only","SP-IR",0.91,0.875,0.944
+"Screened 'Yes' only","CD-IR",0.972,0.953,0.991
+"Excluding straight-liners","SP-CD",0.846,0.799,0.892
+"Excluding straight-liners","SP-IR",0.812,0.751,0.873
+"Excluding straight-liners","CD-IR",0.944,0.91,0.978
+"Excluding repeat profiles","SP-CD",0.884,0.847,0.921
+"Excluding repeat profiles","SP-IR",0.858,0.808,0.908
+"Excluding repeat profiles","CD-IR",0.96,0.934,0.985

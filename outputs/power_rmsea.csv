@@ -1,0 +1,5 @@
+"Sample","N","df","power_close_vs_mediocre"
+"Full sample",416,167,1
+"Screened 'Yes' only",342,167,1
+"Excluding straight-liners",207,167,0.997
+"Excluding repeat profiles",255,167,1

@@ -1,0 +1,9 @@
+step,n
+Form submissions,439
+Excluded: screening question answered 'No' (questionnaire skipped),23
+Excluded: incomplete Likert responses,0
+Analytic sample,416
+  of which passed screening question ('Yes'),342
+  of which responded before screening question was added,74
+  of which straight-lined (same answer on all 20 items),209
+"  of which identical to an earlier response (demographics, job title, all items)",161

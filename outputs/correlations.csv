@@ -1,4 +1,13 @@
-,SP,CD,IR
-SP,1.0,0.5996098095329726,0.6574043142032394
-CD,0.5996098095329726,1.0,0.6076222078844399
-IR,0.6574043142032394,0.6076222078844399,1.0
+Sample,Pair,Pearson_r,p,Spearman_rho
+Full sample,SP-CD,0.8705,0.0,0.7299
+Full sample,SP-IR,0.8438,0.0,0.7057
+Full sample,CD-IR,0.9112,0.0,0.842
+Screened 'Yes' only,SP-CD,0.8744,0.0,0.717
+Screened 'Yes' only,SP-IR,0.8518,0.0,0.7028
+Screened 'Yes' only,CD-IR,0.9124,0.0,0.8224
+Excluding straight-liners,SP-CD,0.8312,0.0,0.5913
+Excluding straight-liners,SP-IR,0.792,0.0,0.5197
+Excluding straight-liners,CD-IR,0.8855,0.0,0.76
+Excluding repeat profiles,SP-CD,0.8502,0.0,0.6763
+Excluding repeat profiles,SP-IR,0.8165,0.0,0.6379
+Excluding repeat profiles,CD-IR,0.8979,0.0,0.8121

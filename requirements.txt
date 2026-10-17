@@ -1,6 +1,6 @@
-pandas
-numpy
-statsmodels
-pingouin
-scikit-learn
-matplotlib
+# Versions used to produce the committed outputs
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+python-docx==1.2.0

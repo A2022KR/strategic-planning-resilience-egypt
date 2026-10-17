@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below (and the associated article once published)."
+type: dataset
+title: "Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management — replication package"
+authors:
+  - family-names: Hamza
+    given-names: Ahmed
+    orcid: "https://orcid.org/0009-0006-2101-7866"
+    affiliation: "Environmental Studies and Research Institute (ESRI), University of Sadat City, Egypt"
+  - family-names: Abousekken
+    given-names: Mahmoud S.
+    orcid: "https://orcid.org/0000-0002-2544-616X"
+    affiliation: "Environmental Studies and Research Institute (ESRI), University of Sadat City, Egypt"
+repository-code: "https://github.com/A2022KR/strategic-planning-resilience-egypt"
+license: MIT
+keywords:
+  - strategic planning
+  - institutional resilience
+  - capacity development
+  - climate-resilient health systems
+  - environmental crisis management
+  - structural equation modelling
+  - Egypt

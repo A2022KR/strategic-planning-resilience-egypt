@@ -1,25 +1,28 @@
-variable,description
-sp1,Strategic Planning item 1 (1–7 Likert)
-sp2,Strategic Planning item 2 (1–7 Likert)
-sp3,Strategic Planning item 3 (1–7 Likert)
-sp4,Strategic Planning item 4 (1–7 Likert)
-sp5,Strategic Planning item 5 (1–7 Likert)
-sp6,Strategic Planning item 6 (1–7 Likert)
-sp7,Strategic Planning item 7 (1–7 Likert)
-sp8,Strategic Planning item 8 (1–7 Likert)
-sp9,Strategic Planning item 9 (1–7 Likert)
-sp10,Strategic Planning item 10 (1–7 Likert)
-cd1,Capacity Development item 1 (1–7 Likert)
-cd2,Capacity Development item 2 (1–7 Likert)
-cd3,Capacity Development item 3 (1–7 Likert)
-cd4,Capacity Development item 4 (1–7 Likert)
-cd5,Capacity Development item 5 (1–7 Likert)
-ir1,Institutional Resilience item 1 (1–7 Likert)
-ir2,Institutional Resilience item 2 (1–7 Likert)
-ir3,Institutional Resilience item 3 (1–7 Likert)
-ir4,Institutional Resilience item 4 (1–7 Likert)
-ir5,Institutional Resilience item 5 (1–7 Likert)
-gender,Gender category (non-identifying)
-age_group,Age group category (non-identifying)
-organisation_type,Organisation type category (non-identifying)
-experience_years_group,Years of experience category (non-identifying)
+variable,construct,description_en,item_ar,scale
+sp1,Strategic planning,Our organisation regularly conducts strategic assessments related to environmental threats.,تقوم مؤسستنا بإجراء تقييمات استراتيجية للمخاطر البيئية,1 = strongly disagree … 7 = strongly agree
+sp2,Strategic planning,"We use structured tools (e.g., SWOT or PESTEL) for strategic planning.",نستخدم أدوات منهجية (مثل SWOT أو PESTEL) في التخطيط الاستراتيجي.,1 = strongly disagree … 7 = strongly agree
+sp3,Strategic planning,Environmental risks are considered when prioritising institutional goals.,يتم أخذ المخاطر البيئية في الاعتبار عند تحديد أولويات المؤسسة.,1 = strongly disagree … 7 = strongly agree
+sp4,Strategic planning,Our strategic plans are developed with input from multiple departments.,يتم إعداد الخطط الاستراتيجية لدينا بمشاركة عدة إدارات.,1 = strongly disagree … 7 = strongly agree
+sp5,Strategic planning,We update strategic assessments regularly in response to changing risks.,نقوم بتحديث التقييمات الاستراتيجية بانتظام استجابةً لتغير المخاطر,1 = strongly disagree … 7 = strongly agree
+sp6,Strategic planning,Our institution integrates environmental preparedness into strategic documents.,تدمج مؤسستنا الاستعداد البيئي في الوثائق الاستراتيجية.,1 = strongly disagree … 7 = strongly agree
+sp7,Strategic planning,"Our strategic planning aligns with national strategies (e.g., Egypt Vision 2030, SDGs).",يتماشى التخطيط الاستراتيجي لدينا مع الاستراتيجيات الوطنية (مثل رؤية مصر 2030 وأهداف التنمية المستدامة),1 = strongly disagree … 7 = strongly agree
+sp8,Strategic planning,There is clear coordination between crisis management and planning teams.,يوجد تنسيق واضح بين فرق إدارة الأزمات والتخطيط,1 = strongly disagree … 7 = strongly agree
+sp9,Strategic planning,Environmental risks are reflected in our policy and budget planning.,تنعكس المخاطر البيئية في تخطيط السياسات والموازنات لدينا,1 = strongly disagree … 7 = strongly agree
+sp10,Strategic planning,Strategic planning is supported by leadership at all institutional levels.,يحظى التخطيط الاستراتيجي بدعم القيادة على جميع المستويات المؤسسية,1 = strongly disagree … 7 = strongly agree
+cd1,Capacity development,Staff are trained to respond to environmental health emergencies.,يتم تدريب الموظفين على الاستجابة لحالات الطوارئ الصحية البيئية,1 = strongly disagree … 7 = strongly agree
+cd2,Capacity development,Our institution allocates financial resources for environmental preparedness.,تخصص مؤسستنا موارد مالية للاستعداد البيئي,1 = strongly disagree … 7 = strongly agree
+cd3,Capacity development,We invest in infrastructure or equipment related to climate and health risks.,نستثمر في البنية التحتية أو المعدات المتعلقة بالمناخ ومخاطر الصحة,1 = strongly disagree … 7 = strongly agree
+cd4,Capacity development,Interdepartmental cooperation is encouraged to build institutional capacity.,يتم تشجيع التعاون بين الإدارات لبناء القدرات المؤسسية,1 = strongly disagree … 7 = strongly agree
+cd5,Capacity development,There is a continuous effort to develop planning and response capabilities.,هناك جهود مستمرة لتطوير قدرات التخطيط والاستجابة,1 = strongly disagree … 7 = strongly agree
+ir1,Institutional resilience,Our organisation learns from previous crises to improve future responses.,تتعلم مؤسستنا من الأزمات السابقة لتحسين الاستجابة المستقبلية,1 = strongly disagree … 7 = strongly agree
+ir2,Institutional resilience,Simulation drills or exercises are conducted regularly.,تُجرى تدريبات أو تمارين محاكاة بانتظام,1 = strongly disagree … 7 = strongly agree
+ir3,Institutional resilience,We monitor and evaluate our environmental preparedness performance.,نقوم برصد وتقييم أداء الاستعداد البيئي لدينا,1 = strongly disagree … 7 = strongly agree
+ir4,Institutional resilience,Feedback from past events is used to update strategic plans.,يتم استخدام التغذية الراجعة من الأحداث السابقة لتحديث الخطط الاستراتيجية,1 = strongly disagree … 7 = strongly agree
+ir5,Institutional resilience,We adapt our operations and structures in response to emerging crises.,نقوم بتكييف عملياتنا وهياكلنا استجابةً للأزمات الناشئة,1 = strongly disagree … 7 = strongly agree
+id,,Respondent index (ordered by submission time; no timestamp retained),,
+screening,,'yes' = passed eligibility question; 'not_asked' = responded before the question was added (14 June–20 July 2025),,
+female,,"1 = female, 0 = male",,
+age_group,,"<40, 40–49, 50+ (coarsened)",,
+private_hospital,,"1 = private hospital, 0 = other organisation type (private health company, NGO, public hospital, governorate directorate, other)",,
+experience_group,,Years of health-sector experience: >15 or ≤15 (coarsened),,
+straightline,,1 = identical answer on all 20 items,,

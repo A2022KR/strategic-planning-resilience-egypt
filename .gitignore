@@ -208,3 +208,10 @@ __marimo__/
 
 # Do not commit row-level demographics
 /data/demographics.csv
+
+# Raw survey export (contains identifiers) and build-only figure copies
+/data/raw/
+*responses*.csv
+/manuscript/build/figures/
+!/manuscript/build/
+/manuscript/build/figures/

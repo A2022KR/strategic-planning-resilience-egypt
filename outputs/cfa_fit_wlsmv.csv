@@ -1,3 +1,13 @@
-Model,chisq,df,cfi,tli,rmsea,srmr
-Base 3-factor (WLSMV),213.47,167,0.998,0.998,0.026,0.044
-Refined 3-factor (WLSMV),145.291,162,1.0,1.001,0.0,0.038
+"Sample","N","Model","chisq.scaled","df.scaled","pvalue.scaled","cfi.scaled","tli.scaled","rmsea.scaled","rmsea.ci.lower.scaled","rmsea.ci.upper.scaled","srmr"
+"Full sample",416,"1-factor",481.594,170,0,0.989,0.987,0.066,0.06,0.073,0.044
+"Full sample",416,"2-factor (SP; CD+IR)",283.553,169,0,0.996,0.995,0.04,0.032,0.048,0.03
+"Full sample",416,"3-factor (SP; CD; IR)",274.407,167,0,0.996,0.996,0.039,0.031,0.048,0.029
+"Screened 'Yes' only",342,"1-factor",412.36,170,0,0.991,0.989,0.065,0.057,0.073,0.044
+"Screened 'Yes' only",342,"2-factor (SP; CD+IR)",239.163,169,0,0.997,0.997,0.035,0.024,0.045,0.028
+"Screened 'Yes' only",342,"3-factor (SP; CD; IR)",230.325,167,0.001,0.998,0.997,0.033,0.022,0.043,0.028
+"Excluding straight-liners",207,"1-factor",508.255,170,0,0.966,0.962,0.098,0.089,0.108,0.077
+"Excluding straight-liners",207,"2-factor (SP; CD+IR)",292.621,169,0,0.988,0.986,0.06,0.048,0.071,0.053
+"Excluding straight-liners",207,"3-factor (SP; CD; IR)",282.242,167,0,0.988,0.987,0.058,0.046,0.069,0.052
+"Excluding repeat profiles",255,"1-factor",484.674,170,0,0.977,0.975,0.085,0.076,0.094,0.062
+"Excluding repeat profiles",255,"2-factor (SP; CD+IR)",281.955,169,0,0.992,0.991,0.051,0.041,0.062,0.042
+"Excluding repeat profiles",255,"3-factor (SP; CD; IR)",272.065,167,0,0.992,0.991,0.05,0.039,0.06,0.041
