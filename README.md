@@ -51,14 +51,14 @@ Every model is estimated in four samples, identified by columns in `sem_df.csv`:
 
 | Sample | Definition | n |
 |---|---|---|
-| Full sample | All complete responses; the 23 respondents who failed the eligibility question never saw the questionnaire | 416 |
+| Full sample | All complete responses; the 23 respondents who answered "No" to the eligibility question left the items blank | 416 |
 | Screened respondents | `screening == "yes"`; excludes 74 who answered before the eligibility question was added (20 July 2025) | 342 |
 | Excluding straight-liners | `straightline == 0`; excludes respondents with the same answer on all 20 items | 207 |
 | Excluding repeat profiles | `duplicate_profile == 0`; excludes submissions identical to an earlier one on all demographics, job title and items | 255 |
 
 ## Data and ethics
 
-Participation was voluntary and anonymous, and informed consent was obtained on the first page of the questionnaire. The shared dataset contains no direct identifiers: timestamps, job titles and free text are removed, and organisation type, age and experience are coarsened. Job titles were used only to flag repeat submissions and are not exported. The raw export is available from the corresponding author on reasonable request, subject to ethics committee approval.
+Participation was voluntary and anonymous, and informed consent was obtained at the start of the questionnaire. The shared dataset contains no direct identifiers: timestamps, job titles and free text are removed, and organisation type, age and experience are coarsened. Job titles were used only to flag repeat submissions and are not exported. The raw export is available from the corresponding author on reasonable request, subject to ethics committee approval.
 
 ## Correction notice (October 2026)
 

@@ -6,7 +6,7 @@ Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examin
 |:---|:---|:---|
 | **Design** | Describe survey design | Cross-sectional, open (non-password-protected) web survey of a purposive (convenience) sample of health-sector managers and supervisors in Cairo |
 | **IRB approval and informed consent** | IRB approval | Research Ethics Committee, ESRI, University of Sadat City (REC/ESRI/USC/10/20-05-2025, 20 May 2025) |
-| | Informed consent | First page of the form presented study information and a consent statement before any question |
+| | Informed consent | The form opened with study information and a consent statement, before any question |
 | | Data protection | No names, e-mail or IP addresses collected; timestamps, job titles and free text removed from the shared dataset; raw export held by the authors |
 | **Development and pre-testing** | Development and testing | Items developed from the literature, reviewed by subject-matter experts and piloted before fielding (Methods: Measures) |
 | **Recruitment process and description of the sample** | Open survey versus closed survey | Open survey |
@@ -18,7 +18,7 @@ Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examin
 | | Incentives | None |
 | | Time/date | 14 June–10 August 2025 |
 | | Randomisation of items or questionnaires | No; fixed item order |
-| | Adaptive questioning | Yes, from 20 July 2025: respondents answering "No" to the eligibility question were routed out |
+| | Adaptive questioning | No. From 20 July 2025 an eligibility question opened the form; the 23 respondents answering "No" submitted without answering the items |
 | | Number of items | 1 screening question, 5 demographic questions (including job title) and 20 Likert items |
 | | Number of screens (pages) | One page |
 | | Completeness check | No missing Likert responses among the 416 analysed submissions |
@@ -26,7 +26,7 @@ Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examin
 | **Response rates** | Unique site visitor | Not available (Google Forms does not record visitors) |
 | | View rate | Not available |
 | | Participation rate | Not available (open link) |
-| | Completion rate | 416 of 439 submissions completed the questionnaire (the remaining 23 were routed out at eligibility) |
+| | Completion rate | 416 of 439 submissions completed the questionnaire (the remaining 23 answered "No" to the eligibility question and left the items blank) |
 | **Preventing multiple entries from the same individual** | Cookies used | No |
 | | IP check | No |
 | | Log file analysis | No |

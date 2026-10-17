@@ -55,7 +55,7 @@ The target population was adults holding a managerial or supervisory role (for e
 
 The questionnaire was administered with Google Forms between 14 June and 10 August 2025. The link was distributed through professional networks and health-sector groups on WhatsApp, LinkedIn and Facebook. Because the link was open, the number of people who saw the invitation, and hence a response rate, is unknown. Participation was voluntary and anonymous. No names, e-mail addresses or IP addresses were collected, and no incentives were offered. All questions were on a single page, and respondents could review and change their answers before submitting.
 
-The first page presented the study information and a consent statement. From 20 July 2025, a screening question asked respondents to confirm current employment in a managerial or supervisory role in Cairo's health sector, and those answering "No" were routed out of the questionnaire. Respondents who submitted before that date (n = 74) were not screened. We retained them and repeated all analyses without them. Respondents did not need to sign in, so repeat submissions could not be prevented technically; we screened for them after data collection (see Data quality).
+The form opened with the study information and a consent statement. From 20 July 2025, a screening question asked respondents to confirm current employment in a managerial or supervisory role in Cairo's health sector, and those answering "No" (n = 23) submitted the form without answering the questionnaire items. Respondents who submitted before that date (n = 74) were not screened. We retained them and repeated all analyses without them. Respondents did not need to sign in, so repeat submissions could not be prevented technically; we screened for them after data collection (see Data quality).
 
 ## Measures
 
@@ -83,7 +83,7 @@ For all ordinal models, lavaan reported a smallest eigenvalue of the parameter c
 
 ## Participants
 
-Of 439 submissions, 23 respondents failed the eligibility question and did not see the questionnaire. This left 416 complete responses with no missing item data (Additional file 1, Table S1). Respondents were predominantly male (63.7%), aged 40–49 years (71.9%) and highly experienced (89.2% with more than 15 years in the health sector) (Table 1). Most worked in private hospitals (86.1%) or private health companies (9.4%). Public hospitals, governorate health directorates and NGOs together accounted for 3.1% of the sample.
+Of 439 submissions, 23 respondents answered "No" to the eligibility question and left the questionnaire items blank. This left 416 complete responses with no missing item data (Additional file 1, Table S1). Respondents were predominantly male (63.7%), aged 40–49 years (71.9%) and highly experienced (89.2% with more than 15 years in the health sector) (Table 1). Most worked in private hospitals (86.1%) or private health companies (9.4%). Public hospitals, governorate health directorates and NGOs together accounted for 3.1% of the sample.
 
 ## Response patterns
 
@@ -149,7 +149,7 @@ AVE: average variance extracted; CD: capacity development; CFA: confirmatory fac
 
 ## Ethics approval and consent to participate
 
-The study was approved by the Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, Egypt (approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025). Data collection began after approval. The study was conducted in accordance with the Declaration of Helsinki. The first page of the online questionnaire presented the study information and a consent statement, and informed consent was obtained from all participants before they answered any questions. Participation was voluntary and anonymous.
+The study was approved by the Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, Egypt (approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025). Data collection began after approval. The study was conducted in accordance with the Declaration of Helsinki. The online questionnaire opened with the study information and a consent statement, and informed consent was obtained from all participants before they answered any questions. Participation was voluntary and anonymous.
 
 ## Consent for publication
 
