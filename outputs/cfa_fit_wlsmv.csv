@@ -8,3 +8,6 @@
 "Excluding straight-liners",207,"1-factor",508.255,170,0,0.966,0.962,0.098,0.089,0.108,0.077
 "Excluding straight-liners",207,"2-factor (SP; CD+IR)",292.621,169,0,0.988,0.986,0.06,0.048,0.071,0.053
 "Excluding straight-liners",207,"3-factor (SP; CD; IR)",282.242,167,0,0.988,0.987,0.058,0.046,0.069,0.052
+"Excluding repeat profiles",255,"1-factor",484.674,170,0,0.977,0.975,0.085,0.076,0.094,0.062
+"Excluding repeat profiles",255,"2-factor (SP; CD+IR)",281.955,169,0,0.992,0.991,0.051,0.041,0.062,0.042
+"Excluding repeat profiles",255,"3-factor (SP; CD; IR)",272.065,167,0,0.992,0.991,0.05,0.039,0.06,0.041

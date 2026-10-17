@@ -70,6 +70,17 @@ def main(raw_path):
     # Response-style flag: identical answer on all 20 items
     df["straightline"] = (df[ITEMS].nunique(axis=1) == 1).astype(int)
 
+    # Possible repeat submission: identical to an earlier response on every
+    # demographic field, job title and all 20 items. Job title is used only
+    # here and is not exported.
+    profile = raw.iloc[:, COL_GENDER:COL_FIRST_ITEM].fillna("NA").astype(str).apply(
+        lambda r: "|".join(r.str.strip().str.lower()), axis=1)[keep]
+    answers = df[ITEMS].astype(str).apply("".join, axis=1)
+    order = ts[keep].argsort(kind="stable").values
+    key = (profile + "#" + answers).iloc[order]
+    dup = pd.Series(key.duplicated(keep="first").values, index=key.index).reindex(df.index)
+    df["duplicate_profile"] = dup.astype(int)
+
     # Order rows by submission time, then drop the time itself
     df = df.iloc[ts[keep].argsort(kind="stable").values].reset_index(drop=True)
     df.insert(0, "id", range(1, len(df) + 1))
@@ -78,6 +89,8 @@ def main(raw_path):
     flow.append(("  of which passed screening question ('Yes')", int(df.screening.eq("yes").sum())))
     flow.append(("  of which responded before screening question was added", int(df.screening.eq("not_asked").sum())))
     flow.append(("  of which straight-lined (same answer on all 20 items)", int(df.straightline.sum())))
+    flow.append(("  of which identical to an earlier response (demographics, job title, all items)",
+                 int(df.duplicate_profile.sum())))
 
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "outputs").mkdir(exist_ok=True)

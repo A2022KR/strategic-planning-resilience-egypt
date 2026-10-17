@@ -5,3 +5,5 @@
 "Screened 'Yes' only","3-factor vs 1-factor",65.17,3,4.6e-14
 "Excluding straight-liners","3-factor vs 2-factor",9.15,2,0.0103
 "Excluding straight-liners","3-factor vs 1-factor",83.93,3,4.4e-18
+"Excluding repeat profiles","3-factor vs 2-factor",8.73,2,0.0127
+"Excluding repeat profiles","3-factor vs 1-factor",73.95,3,6.08e-16

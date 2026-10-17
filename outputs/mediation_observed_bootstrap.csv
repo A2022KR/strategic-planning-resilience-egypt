@@ -29,3 +29,9 @@ Excluding straight-liners + controls,199,c′ (SP→IR | CD),0.26,-0.147,0.563
 Excluding straight-liners + controls,199,c (total SP→IR),1.185,0.945,1.342
 Excluding straight-liners + controls,199,indirect (a×b),0.925,0.642,1.294
 Excluding straight-liners + controls,199,proportion mediated,0.78,0.545,1.135
+Excluding repeat profiles,255,a (SP→CD),1.147,1.006,1.302
+Excluding repeat profiles,255,b (CD→IR | SP),0.798,0.598,1.027
+Excluding repeat profiles,255,c′ (SP→IR | CD),0.281,-0.048,0.561
+Excluding repeat profiles,255,c (total SP→IR),1.197,1.036,1.33
+Excluding repeat profiles,255,indirect (a×b),0.916,0.658,1.231
+Excluding repeat profiles,255,proportion mediated,0.765,0.549,1.043

@@ -2,3 +2,4 @@ Sample,First_component_pct_variance,Eigenvalues_gt_1
 Full sample,68.25,2
 Screened 'Yes' only,70.0,2
 Excluding straight-liners,61.67,2
+Excluding repeat profiles,64.62,2

@@ -8,3 +8,6 @@ Screened 'Yes' only,CD-IR,0.9124,0.0,0.8224
 Excluding straight-liners,SP-CD,0.8312,0.0,0.5913
 Excluding straight-liners,SP-IR,0.792,0.0,0.5197
 Excluding straight-liners,CD-IR,0.8855,0.0,0.76
+Excluding repeat profiles,SP-CD,0.8502,0.0,0.6763
+Excluding repeat profiles,SP-IR,0.8165,0.0,0.6379
+Excluding repeat profiles,CD-IR,0.8979,0.0,0.8121

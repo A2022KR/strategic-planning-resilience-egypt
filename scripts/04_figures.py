@@ -15,6 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "figures"
 FIG.mkdir(exist_ok=True)
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9})
+# Omit creation dates so re-running produces byte-identical files
+META = {"png": {"Software": None}, "pdf": {"CreationDate": None, "Producer": None}}
 
 
 def fig1_model():
@@ -51,7 +53,7 @@ def fig1_model():
     ax.text(5.0, 0.2, "Standardised WLSMV estimates, full sample (N = 416); [ ] excluding straight-liners (n = 207). "
             "***p < 0.001", ha="center", fontsize=7, color="#4a5560")
     for ext in ("png", "pdf"):
-        fig.savefig(FIG / f"fig1_model.{ext}", dpi=300, bbox_inches="tight")
+        fig.savefig(FIG / f"fig1_model.{ext}", dpi=300, bbox_inches="tight", metadata=META[ext])
     plt.close(fig)
 
 
@@ -80,7 +82,7 @@ def fig2_distributions():
     ax.set_title("b  Ceiling responding", loc="left", fontsize=9, pad=24)
     fig.tight_layout()
     for ext in ("png", "pdf"):
-        fig.savefig(FIG / f"fig2_item_distributions.{ext}", dpi=300, bbox_inches="tight")
+        fig.savefig(FIG / f"fig2_item_distributions.{ext}", dpi=300, bbox_inches="tight", metadata=META[ext])
     plt.close(fig)
 
 

@@ -59,3 +59,23 @@
 "Excluding straight-liners","IR","ir3",0.905,0.023
 "Excluding straight-liners","IR","ir4",0.901,0.025
 "Excluding straight-liners","IR","ir5",0.847,0.034
+"Excluding repeat profiles","SP","sp1",0.87,0.028
+"Excluding repeat profiles","SP","sp2",0.809,0.029
+"Excluding repeat profiles","SP","sp3",0.865,0.027
+"Excluding repeat profiles","SP","sp4",0.875,0.028
+"Excluding repeat profiles","SP","sp5",0.916,0.017
+"Excluding repeat profiles","SP","sp6",0.902,0.022
+"Excluding repeat profiles","SP","sp7",0.936,0.035
+"Excluding repeat profiles","SP","sp8",0.873,0.032
+"Excluding repeat profiles","SP","sp9",0.883,0.022
+"Excluding repeat profiles","SP","sp10",0.824,0.033
+"Excluding repeat profiles","CD","cd1",0.903,0.019
+"Excluding repeat profiles","CD","cd2",0.944,0.012
+"Excluding repeat profiles","CD","cd3",0.958,0.011
+"Excluding repeat profiles","CD","cd4",0.918,0.02
+"Excluding repeat profiles","CD","cd5",0.897,0.024
+"Excluding repeat profiles","IR","ir1",0.901,0.022
+"Excluding repeat profiles","IR","ir2",0.854,0.025
+"Excluding repeat profiles","IR","ir3",0.922,0.018
+"Excluding repeat profiles","IR","ir4",0.918,0.019
+"Excluding repeat profiles","IR","ir5",0.89,0.025

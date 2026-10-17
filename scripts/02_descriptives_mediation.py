@@ -91,6 +91,7 @@ def main():
         "Full sample": df,
         "Screened 'Yes' only": df[df.screening == "yes"],
         "Excluding straight-liners": df[df.straightline == 0],
+        "Excluding repeat profiles": df[df.duplicate_profile == 0],
     }
 
     # Scale descriptives, reliability and correlations
@@ -117,6 +118,8 @@ def main():
         ("Median % of items answered 7", float(np.median(100 * df[ITEMS].eq(7).mean(axis=1)))),
         ("Median within-person SD", float(within_sd.median())),
         ("Any item answered 1-3 (disagreement)", int(df[ITEMS].le(3).any(axis=1).sum())),
+        ("Identical to an earlier response (demographics, job title, all items)", int(df.duplicate_profile.sum())),
+        ("  of which straight-lined", int((df.duplicate_profile & df.straightline).sum())),
     ], columns=["Indicator", "Value"])
     style.to_csv(OUT / "response_style.csv", index=False)
 
@@ -141,6 +144,7 @@ def main():
         ("Screened 'Yes' only", df_c[df_c.screening == "yes"], []),
         ("Excluding straight-liners", df_c[df_c.straightline == 0], []),
         ("Excluding straight-liners + controls", df_c[df_c.straightline == 0], controls),
+        ("Excluding repeat profiles", df_c[df_c.duplicate_profile == 0], []),
     ]
     for sname, d, ctrl in specs:
         n, rows = mediation(d, ctrl, rng)

@@ -14,7 +14,8 @@ for (v in items) dat[[v]] <- pmax(dat[[v]], 4) - 3
 samples <- list(
   "Full sample"                  = dat,
   "Screened 'Yes' only"          = dat[dat$screening == "yes", ],
-  "Excluding straight-liners"    = dat[dat$straightline == 0, ]
+  "Excluding straight-liners"    = dat[dat$straightline == 0, ],
+  "Excluding repeat profiles"    = dat[dat$duplicate_profile == 0, ]
 )
 
 m1 <- 'G =~ sp1+sp2+sp3+sp4+sp5+sp6+sp7+sp8+sp9+sp10+cd1+cd2+cd3+cd4+cd5+ir1+ir2+ir3+ir4+ir5'
@@ -86,7 +87,58 @@ for (s in names(samples)) {
                               R2_IR = round(inspect(fs, "r2")["IR"], 3))
 }
 
+# Alternative specifications (full sample and excluding straight-liners):
+#  - common latent method factor (equal loadings, orthogonal to traits)
+#  - reverse order SP -> IR -> CD
+#  - CD and IR merged into a single "preparedness capability" factor
+all_items <- paste(items, collapse = " + ")
+alt_models <- list(
+  "Hypothesised (SP -> CD -> IR)" = sem_model,
+  "Common method factor added" = paste(sem_model, '
+       M =~ m*', gsub(" \\+ ", " + m*", all_items), '
+       M ~~ 0*SP + 0*CD + 0*IR'),
+  "Reverse order (SP -> IR -> CD)" = paste(m3, '
+       IR ~ a*SP
+       CD ~ b*IR + cp*SP
+       ind := a*b
+       total := cp + a*b
+       prop := (a*b)/(cp + a*b)'),
+  "Merged CD+IR (SP -> CDIR)" = paste(m2, '
+       CDIR ~ a*SP')
+)
+alt_rows <- list()
+for (s in c("Full sample", "Excluding straight-liners")) {
+  d <- samples[[s]]
+  for (nm in names(alt_models)) {
+    fa <- sem(alt_models[[nm]], d, ordered = items, estimator = "WLSMV")
+    if (!lavInspect(fa, "converged")) {
+      message("Did not converge: ", nm, " / ", s)
+      alt_rows[[length(alt_rows) + 1]] <- data.frame(Sample = s, Model = nm, chisq = NA, df = NA, cfi = NA,
+        rmsea = NA, srmr = NA, a = NA, b = NA, c_prime = NA, p_c_prime = NA, indirect = NA,
+        p_indirect = NA, mean_method_loading = NA, check.names = FALSE)
+      next
+    }
+    pe <- parameterEstimates(fa, standardized = TRUE)
+    get <- function(l) { v <- pe$std.all[pe$label == l]; if (length(v)) round(v[1], 3) else NA }
+    getp <- function(l) { v <- pe$pvalue[pe$label == l]; if (length(v)) signif(v[1], 3) else NA }
+    fm <- fitMeasures(fa, c("chisq.scaled", "df.scaled", "cfi.scaled", "rmsea.scaled", "srmr"))
+    mload <- if (grepl("method", nm)) round(mean(pe$std.all[pe$lhs == "M" & pe$op == "=~"]), 3) else NA
+    alt_rows[[length(alt_rows) + 1]] <- data.frame(
+      Sample = s, Model = nm, chisq = round(fm[[1]], 1), df = fm[[2]], cfi = round(fm[[3]], 3),
+      rmsea = round(fm[[4]], 3), srmr = round(fm[[5]], 3),
+      a = get("a"), b = get("b"), c_prime = get("cp"), p_c_prime = getp("cp"),
+      indirect = get("ind"), p_indirect = getp("ind"), mean_method_loading = mload, check.names = FALSE)
+  }
+}
+
 out <- function(lst, file) write.csv(do.call(rbind, lst), file.path("outputs", file), row.names = FALSE)
+out(alt_rows, "sem_alternative_models.csv")
+
+# Power of the RMSEA test of close fit (MacCallum, Browne & Sugawara, 1996)
+pw <- data.frame(Sample = names(samples), N = sapply(samples, nrow), df = 167,
+                 power_close_vs_mediocre = sapply(samples, function(d)
+                   round(findRMSEApower(rmsea0 = 0.05, rmseaA = 0.08, df = 167, n = nrow(d)), 3)))
+write.csv(pw, file.path("outputs", "power_rmsea.csv"), row.names = FALSE)
 out(fit_rows, "cfa_fit_wlsmv.csv")
 out(diff_rows, "cfa_model_comparison.csv")
 out(load_rows, "cfa_loadings.csv")
