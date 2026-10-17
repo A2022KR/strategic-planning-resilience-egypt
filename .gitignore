@@ -213,3 +213,5 @@ __marimo__/
 /data/raw/
 *responses*.csv
 /manuscript/build/figures/
+!/manuscript/build/
+/manuscript/build/figures/
