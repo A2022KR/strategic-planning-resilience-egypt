@@ -53,7 +53,7 @@ The target population was adults holding a managerial or supervisory role (for e
 
 ## Data collection
 
-The questionnaire was administered with Google Forms between 14 June and 10 August 2025. The link was distributed through professional networks and health-sector groups on WhatsApp, LinkedIn and Facebook. Because the link was open, the number of people who saw the invitation, and hence a response rate, is unknown. Participation was voluntary and anonymous. No names, e-mail addresses or IP addresses were collected.
+The questionnaire was administered with Google Forms between 14 June and 10 August 2025. The link was distributed through professional networks and health-sector groups on WhatsApp, LinkedIn and Facebook. Because the link was open, the number of people who saw the invitation, and hence a response rate, is unknown. Participation was voluntary and anonymous. No names, e-mail addresses or IP addresses were collected, and no incentives were offered. All questions were on a single page, and respondents could review and change their answers before submitting.
 
 The first page presented the study information and a consent statement. From 20 July 2025, a screening question asked respondents to confirm current employment in a managerial or supervisory role in Cairo's health sector, and those answering "No" were routed out of the questionnaire. Respondents who submitted before that date (n = 74) were not screened. We retained them and repeated all analyses without them. Respondents did not need to sign in, so repeat submissions could not be prevented technically; we screened for them after data collection (see Data quality).
 
@@ -165,7 +165,7 @@ The authors declare that they have no competing interests.
 
 ## Funding
 
-[Authors to confirm: "This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors."]
+This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors.
 
 ## Authors' contributions
 

@@ -15,14 +15,14 @@ Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examin
 | **Survey administration** | Web/e-mail | Web (Google Forms) |
 | | Context | Professional social-media groups and messaging networks used by health-sector staff in Cairo |
 | | Mandatory/voluntary | Voluntary |
-| | Incentives | [Authors to confirm: none] |
+| | Incentives | None |
 | | Time/date | 14 June–10 August 2025 |
 | | Randomisation of items or questionnaires | No; fixed item order |
 | | Adaptive questioning | Yes, from 20 July 2025: respondents answering "No" to the eligibility question were routed out |
 | | Number of items | 1 screening question, 5 demographic questions (including job title) and 20 Likert items |
-| | Number of screens (pages) | [Authors to confirm] |
+| | Number of screens (pages) | One page |
 | | Completeness check | No missing Likert responses among the 416 analysed submissions |
-| | Review step | [Authors to confirm whether respondents could go back and change answers] |
+| | Review step | Yes; respondents could review and change answers before submitting |
 | **Response rates** | Unique site visitor | Not available (Google Forms does not record visitors) |
 | | View rate | Not available |
 | | Participation rate | Not available (open link) |
