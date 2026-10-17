@@ -334,7 +334,7 @@ def main():
     for name in ("strobe_checklist", "cherries_checklist"):
         shutil.copy(MS / "checklists" / f"{name}.md", BUILD / f"{name}.md")
     for fig in ("fig1_model", "fig2_item_distributions"):
-        for ext in ("png", "pdf"):
+        for ext in ("png", "pdf", "tiff"):
             shutil.copy(ROOT / "figures" / f"{fig}.{ext}", BUILD / f"{fig}.{ext}")
     if not shutil.which("pandoc"):
         print("pandoc not found; wrote Markdown only to", BUILD)

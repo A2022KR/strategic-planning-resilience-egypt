@@ -1,7 +1,7 @@
 """Manuscript figures.
 
 Run from the repository root after scripts 01-03:  python scripts/04_figures.py
-Writes figures/fig1_model.png, figures/fig2_item_distributions.png (and .pdf).
+Writes figures/fig1_model and figures/fig2_item_distributions as .png, .pdf and .tiff.
 """
 from pathlib import Path
 
@@ -17,6 +17,14 @@ FIG.mkdir(exist_ok=True)
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9})
 # Omit creation dates so re-running produces byte-identical files
 META = {"png": {"Software": None}, "pdf": {"CreationDate": None, "Producer": None}}
+EXTS = ("png", "pdf", "tiff")
+
+
+def save(fig, name):
+    """Write PNG and PDF (for the manuscript) and LZW-compressed TIFF (for journal upload), all at 300 dpi."""
+    for ext in EXTS:
+        extra = {"pil_kwargs": {"compression": "tiff_lzw"}} if ext == "tiff" else {"metadata": META[ext]}
+        fig.savefig(FIG / f"{name}.{ext}", dpi=300, bbox_inches="tight", **extra)
 
 
 def fig1_model():
@@ -52,8 +60,7 @@ def fig1_model():
             ha="center", fontsize=8)
     ax.text(5.0, 0.2, "Standardised WLSMV estimates, full sample (N = 416); [ ] excluding straight-liners (n = 207). "
             "***p < 0.001", ha="center", fontsize=7, color="#4a5560")
-    for ext in ("png", "pdf"):
-        fig.savefig(FIG / f"fig1_model.{ext}", dpi=300, bbox_inches="tight", metadata=META[ext])
+    save(fig, "fig1_model")
     plt.close(fig)
 
 
@@ -81,8 +88,7 @@ def fig2_distributions():
     ax.set_xlabel("Items answered 7 (of 20)"); ax.set_ylabel("Respondents")
     ax.set_title("b  Ceiling responding", loc="left", fontsize=9, pad=24)
     fig.tight_layout()
-    for ext in ("png", "pdf"):
-        fig.savefig(FIG / f"fig2_item_distributions.{ext}", dpi=300, bbox_inches="tight", metadata=META[ext])
+    save(fig, "fig2_item_distributions")
     plt.close(fig)
 
 
