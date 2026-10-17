@@ -219,9 +219,13 @@ We thank the health-sector professionals who took part in the survey and the sub
 40. Maxwell SE, Cole DA. Bias in cross-sectional analyses of longitudinal mediation. Psychol Methods. 2007;12(1):23–44. https://doi.org/10.1037/1082-989X.12.1.23
 41. Spector PE. Method variance in organizational research: truth or urban legend? Organ Res Methods. 2006;9(2):221–32. https://doi.org/10.1177/1094428105284955
 
-# Figure legends
+# Figures
+
+![](fig1_model.png){width=100%}
 
 **Fig. 1 Conceptual model and standardised path estimates.** Strategic planning (SP) is hypothesised to relate to institutional resilience (IR) directly (c′, H3) and indirectly through capacity development (CD; paths a and b, H1, H2 and H4). Values are standardised WLSMV estimates for the full sample (N = 416). Values in brackets are for respondents who did not give identical answers to all items (n = 207). ***P < 0.001.
+
+![](fig2_item_distributions.png){width=100%}
 
 **Fig. 2 Distribution of responses.** **a** Percentage of respondents choosing each response category for the 20 items (sp, strategic planning; cd, capacity development; ir, institutional resilience); categories 1–4 are combined. **b** Number of items (of 20) each respondent rated 7 ("strongly agree"); 207 of 416 respondents rated every item 7.
 
