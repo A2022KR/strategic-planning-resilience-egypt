@@ -149,7 +149,7 @@ AVE: average variance extracted; CD: capacity development; CFA: confirmatory fac
 
 ## Ethics approval and consent to participate
 
-The study was approved by the Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, Egypt (approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025). The protocol was approved according to the regulations of the Research Ethics Committee, and data collection began after approval. The online questionnaire opened with the study information and a consent statement, and informed consent was obtained from all participants before they answered any questions. Participation was voluntary and anonymous.
+The study was approved by the Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, Egypt (approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025). The protocol was approved according to the regulations of the Research Ethics Committee, and data collection began after approval. The study was conducted in accordance with the Declaration of Helsinki. The online questionnaire opened with the study information and a consent statement, and informed consent was obtained from all participants before they answered any questions. Participation was voluntary and anonymous.
 
 ## Consent for publication
 
