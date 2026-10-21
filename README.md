@@ -25,7 +25,7 @@ Ethical approval: REC/ESRI/USC/10/20-05-2025. Prepared for submission to *BMC He
 | `outputs/` | All result tables (CSV) |
 | `figures/` | Manuscript figures (PNG, PDF) |
 | `manuscript/` | Manuscript source (`manuscript.md`, `references.csv`, `cover_letter.md`, `checklists/`) |
-| `manuscript/build/` | Submission files: manuscript, Additional files 1–3 (supplementary tables, STROBE, CHERRIES), cover letter, figures |
+| `manuscript/build/` | Submission files: manuscript, Additional file 1 (supplementary tables), STROBE and CHERRIES checklists (for the editor, not published), cover letter, figures |
 | `notebooks/analysis_colab.ipynb` | Runs the pipeline in Google Colab |
 
 ## Reproduce

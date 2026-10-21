@@ -341,8 +341,8 @@ def main():
         return
     pandoc("manuscript.md", "manuscript.docx", line_numbers=True)
     pandoc("additional_file_1_supplementary.md", "additional_file_1_supplementary.docx")
-    pandoc("strobe_checklist.md", "additional_file_2_STROBE_checklist.docx")
-    pandoc("cherries_checklist.md", "additional_file_3_CHERRIES_checklist.docx")
+    pandoc("strobe_checklist.md", "STROBE_checklist.docx")
+    pandoc("cherries_checklist.md", "CHERRIES_checklist.docx")
     if (MS / "cover_letter.md").exists():
         shutil.copy(MS / "cover_letter.md", BUILD / "cover_letter.md")
         pandoc("cover_letter.md", "cover_letter.docx")

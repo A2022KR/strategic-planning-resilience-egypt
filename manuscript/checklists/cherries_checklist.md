@@ -1,4 +1,4 @@
-# Additional file 3: CHERRIES checklist for web-based surveys
+# CHERRIES checklist for web-based surveys
 
 Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management
 
