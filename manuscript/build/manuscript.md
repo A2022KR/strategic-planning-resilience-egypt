@@ -45,7 +45,7 @@ Self-reported preparedness is vulnerable to ceiling effects, acquiescence and co
 
 ## Study design and reporting
 
-This was a cross-sectional, web-based survey. Reporting follows the STROBE statement for cross-sectional studies [29] and the Checklist for Reporting Results of Internet E-Surveys (CHERRIES) [30] (Additional files 2 and 3).
+This was a cross-sectional, web-based survey. Reporting follows the STROBE statement for cross-sectional studies [29] and the Checklist for Reporting Results of Internet E-Surveys (CHERRIES) [30].
 
 ## Setting and participants
 
@@ -345,7 +345,3 @@ Screened respondents: excludes 74 respondents who answered before the eligibilit
 # Additional files
 
 **Additional file 1** (.docx): Supplementary tables. Table S1, sample flow; Table S2, questionnaire items in English and Arabic; Table S3, item statistics and standardised loadings; Table S4, response-style diagnostics and Harman single-factor test; Table S5, observed-score mediation in all analysis samples.
-
-**Additional file 2** (.docx): STROBE checklist for cross-sectional studies.
-
-**Additional file 3** (.docx): CHERRIES checklist for web-based surveys.
