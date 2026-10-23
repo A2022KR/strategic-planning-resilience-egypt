@@ -6,7 +6,7 @@ Replication package for:
 
 **"Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management"**
 Ahmed Hamza ([ORCID 0009-0006-2101-7866](https://orcid.org/0009-0006-2101-7866)) and Mahmoud S. Abousekken ([ORCID 0000-0002-2544-616X](https://orcid.org/0000-0002-2544-616X)), Environmental Studies and Research Institute (ESRI), University of Sadat City, Egypt.
-Ethical approval: REC/ESRI/USC/10/20-05-2025. Prepared for submission to *BMC Health Services Research*.
+Ethical approval: REC/ESRI/USC/10/20-05-2025. Prepared for submission to *Discover Health Systems* (transferred from *BMC Health Services Research*).
 
 ## Contents
 
