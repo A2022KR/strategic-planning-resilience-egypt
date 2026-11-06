@@ -6,7 +6,7 @@ Replication package for:
 
 **"Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examining the Mediating Role of Capacity Development in the Context of Environmental Crisis Management"**
 Ahmed Hamza ([ORCID 0009-0006-2101-7866](https://orcid.org/0009-0006-2101-7866)) and Mahmoud S. Abousekken ([ORCID 0000-0002-2544-616X](https://orcid.org/0000-0002-2544-616X)), Environmental Studies and Research Institute (ESRI), University of Sadat City, Egypt.
-Ethical approval: REC/ESRI/USC/10/20-05-2025. Prepared for submission to *Discover Health Systems* (transferred from *BMC Health Services Research*).
+Ethical approval: REC/ESRI/USC/10/20-05-2025. Submitted to *Environment Systems and Decisions* (double-anonymous review; transferred via Springer Nature).
 
 ## Contents
 
@@ -25,7 +25,7 @@ Ethical approval: REC/ESRI/USC/10/20-05-2025. Prepared for submission to *Discov
 | `outputs/` | All result tables (CSV) |
 | `figures/` | Manuscript figures (PNG, PDF) |
 | `manuscript/` | Manuscript source (`manuscript.md`, `references.csv`, `cover_letter.md`, `checklists/`) |
-| `manuscript/build/` | Submission files: manuscript, Additional file 1 (supplementary tables), STROBE and CHERRIES checklists (for the editor, not published), cover letter, figures |
+| `manuscript/build/` | Submission files: manuscript (full and anonymised), separate title page, Additional file 1 (supplementary tables), STROBE and CHERRIES checklists (full and anonymised; for the editor, not published), cover letter, figures |
 | `notebooks/analysis_colab.ipynb` | Runs the pipeline in Google Colab |
 
 ## Reproduce

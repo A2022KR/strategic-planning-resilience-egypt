@@ -4,7 +4,8 @@ Run from the repository root after scripts 01-04:  python scripts/05_build_manus
 - Fills the tables in manuscript/manuscript.md from outputs/*.csv
 - Numbers citations ([@key]) in order of first appearance, Vancouver style, from manuscript/references.csv
 - Writes to manuscript/build/: manuscript.md/.docx, additional_file_1_supplementary.md/.docx and the
-  STROBE and CHERRIES checklists (pandoc required for .docx; python-docx for line numbers and spacing)
+  STROBE and CHERRIES checklists, plus a double-anonymous set (manuscript_anonymised, title_page and
+  anonymised checklists) (pandoc required for .docx; python-docx for line numbers and spacing)
 """
 import re
 import shutil
@@ -276,6 +277,8 @@ def format_docx(path, line_numbers):
         print("python-docx not installed; skipping layout formatting of", path.name)
         return
     doc = Document(path)
+    doc.core_properties.author = ""
+    doc.core_properties.last_modified_by = ""
     for name in ("Normal", "Body Text", "First Paragraph", "Compact"):
         if name in [s.name for s in doc.styles]:
             st = doc.styles[name]
@@ -313,6 +316,62 @@ def format_docx(path, line_numbers):
     doc.save(path)
 
 
+# Double-anonymous review: identifying text in the manuscript and its replacement.
+ANON_REPLACEMENTS = [
+    ("the Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, "
+     "Egypt (approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025)",
+     "an institutional Research Ethics Committee (committee name, approval number and date removed for anonymous "
+     "review; provided to the editor in the cover letter)"),
+    ("https://github.com/A2022KR/strategic-planning-resilience-egypt",
+     "a public repository (link removed for anonymous review; provided to the editor in the cover letter)"),
+    ("Research Ethics Committee, ESRI, University of Sadat City (REC/ESRI/USC/10/20-05-2025, 20 May 2025)",
+     "Institutional research ethics committee (details removed for anonymous review; provided to the editor in the cover letter)"),
+]
+IDENTIFIERS = ("Hamza", "Abousekken", "ESRI", "Sadat", "ESLSCA", "A2022KR", "github", "ORCID", "esri.usc")
+TITLE_PAGE_ONLY = ("Funding", "Author contributions", "Acknowledgements")
+
+
+def section(text, name):
+    m = re.search(rf"^## {re.escape(name)}\n\n(.*?)(?=^#)", text, flags=re.S | re.M)
+    return m
+
+
+def blind(text):
+    for old, new in ANON_REPLACEMENTS:
+        text = text.replace(old, new)
+    return text
+
+
+def check_anonymous(text, label):
+    leaks = [w for w in IDENTIFIERS if w.lower() in text.lower()]
+    if leaks:
+        raise SystemExit(f"{label} still identifies the authors: {', '.join(leaks)}")
+
+
+def anonymise(text, self_citations):
+    """Split the full manuscript into an anonymised manuscript and a separate title page.
+
+    self_citations: reference-list entries of the authors' own work, blanked for review.
+    """
+    front_end = text.index("---\n", 4) + 4
+    abstract = text.index("# Abstract")
+    authors = text[front_end:abstract].strip()
+    title = re.search(r'^title: "(.*)"$', text, flags=re.M).group(1)
+    page = [f"# {title}", "", authors, "", "# Declarations", ""]
+    for name in ("Ethics approval and consent to participate", "Data availability", "Competing interests",
+                 *TITLE_PAGE_ONLY):
+        page += [f"## {name}", "", section(text, name).group(1).strip(), ""]
+    body = text[:front_end] + "\n" + text[abstract:]
+    for name in TITLE_PAGE_ONLY:
+        m = section(body, name)
+        body = body[:m.start()] + body[m.end():]
+    body = blind(body)
+    for citation in self_citations:
+        body = body.replace(citation, "Reference removed for anonymous review (authors' own work).")
+    check_anonymous(body, "Anonymised manuscript")
+    return body, "\n".join(page)
+
+
 def pandoc(src, dst, line_numbers=False):
     subprocess.run(["pandoc", src, "-o", dst, "--resource-path=."], cwd=BUILD, check=True)
     format_docx(BUILD / dst, line_numbers)
@@ -343,6 +402,19 @@ def main():
     pandoc("additional_file_1_supplementary.md", "additional_file_1_supplementary.docx")
     pandoc("strobe_checklist.md", "STROBE_checklist.docx")
     pandoc("cherries_checklist.md", "CHERRIES_checklist.docx")
+
+    # Double-anonymous submission set: blinded manuscript and checklists, separate title page
+    anon, title_page = anonymise(text, [refs["hamza2023"]])
+    (BUILD / "manuscript_anonymised.md").write_text(anon, encoding="utf-8")
+    (BUILD / "title_page.md").write_text(title_page, encoding="utf-8")
+    pandoc("manuscript_anonymised.md", "manuscript_anonymised.docx", line_numbers=True)
+    pandoc("title_page.md", "title_page.docx")
+    for name, out in (("strobe_checklist", "STROBE_checklist_anonymised"),
+                      ("cherries_checklist", "CHERRIES_checklist_anonymised")):
+        blinded = blind((BUILD / f"{name}.md").read_text(encoding="utf-8"))
+        check_anonymous(blinded, out)
+        (BUILD / f"{out}.md").write_text(blinded, encoding="utf-8")
+        pandoc(f"{out}.md", f"{out}.docx")
     if (MS / "cover_letter.md").exists():
         shutil.copy(MS / "cover_letter.md", BUILD / "cover_letter.md")
         pandoc("cover_letter.md", "cover_letter.docx")
