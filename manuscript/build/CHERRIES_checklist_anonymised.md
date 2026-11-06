@@ -5,7 +5,7 @@ Strategic Planning and Institutional Resilience in Cairo's Health Sector: Examin
 | Item category | Checklist item | Response in this study |
 |:---|:---|:---|
 | **Design** | Describe survey design | Cross-sectional, open (non-password-protected) web survey of a purposive (convenience) sample of health-sector managers and supervisors in Cairo |
-| **IRB approval and informed consent** | IRB approval | Institutional research ethics committee (details removed for anonymous review; given on the title page) |
+| **IRB approval and informed consent** | IRB approval | Institutional research ethics committee (details removed for anonymous review; provided to the editor in the cover letter) |
 | | Informed consent | The form opened with study information and a consent statement, before any question |
 | | Data protection | No names, e-mail or IP addresses collected; timestamps, job titles and free text removed from the shared dataset; raw export held by the authors |
 | **Development and pre-testing** | Development and testing | Items developed from the literature, reviewed by subject-matter experts and piloted before fielding (Methods: Measures) |

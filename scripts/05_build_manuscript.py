@@ -321,13 +321,13 @@ ANON_REPLACEMENTS = [
     ("the Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, "
      "Egypt (approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025)",
      "an institutional Research Ethics Committee (committee name, approval number and date removed for anonymous "
-     "review; given on the title page)"),
+     "review; provided to the editor in the cover letter)"),
     ("https://github.com/A2022KR/strategic-planning-resilience-egypt",
-     "a public repository (link removed for anonymous review; given on the title page)"),
+     "a public repository (link removed for anonymous review; provided to the editor in the cover letter)"),
     ("Research Ethics Committee, ESRI, University of Sadat City (REC/ESRI/USC/10/20-05-2025, 20 May 2025)",
-     "Institutional research ethics committee (details removed for anonymous review; given on the title page)"),
+     "Institutional research ethics committee (details removed for anonymous review; provided to the editor in the cover letter)"),
 ]
-IDENTIFIERS = ("Hamza", "Abousekken", "ESRI", "Sadat", "A2022KR", "github", "ORCID", "esri.usc")
+IDENTIFIERS = ("Hamza", "Abousekken", "ESRI", "Sadat", "ESLSCA", "A2022KR", "github", "ORCID", "esri.usc")
 TITLE_PAGE_ONLY = ("Funding", "Author contributions", "Acknowledgements")
 
 

@@ -137,7 +137,7 @@ AVE: average variance extracted; CD: capacity development; CFA: confirmatory fac
 
 ## Ethics approval and consent to participate
 
-The study was approved by an institutional Research Ethics Committee (committee name, approval number and date removed for anonymous review; given on the title page). The protocol was approved according to the regulations of the Research Ethics Committee, and data collection began after approval. The study was conducted in accordance with the Declaration of Helsinki. The online questionnaire opened with the study information and a consent statement, and informed consent was obtained from all participants before they answered any questions. Participation was voluntary and anonymous.
+The study was approved by an institutional Research Ethics Committee (committee name, approval number and date removed for anonymous review; provided to the editor in the cover letter). The protocol was approved according to the regulations of the Research Ethics Committee, and data collection began after approval. The study was conducted in accordance with the Declaration of Helsinki. The online questionnaire opened with the study information and a consent statement, and informed consent was obtained from all participants before they answered any questions. Participation was voluntary and anonymous.
 
 ## Consent for publication
 
@@ -145,7 +145,7 @@ Not applicable.
 
 ## Data availability
 
-The anonymised analytic dataset is available at a public repository (link removed for anonymous review; given on the title page), together with the codebook (including English and Arabic item wording), all analysis code and all output tables. In the shared dataset, timestamps, job titles and free-text fields are removed and demographics are coarsened. The raw survey export is not publicly available because it contains potentially identifying information; it is available from the corresponding author on reasonable request, subject to ethics committee approval.
+The anonymised analytic dataset is available at a public repository (link removed for anonymous review; provided to the editor in the cover letter), together with the codebook (including English and Arabic item wording), all analysis code and all output tables. In the shared dataset, timestamps, job titles and free-text fields are removed and demographics are coarsened. The raw survey export is not publicly available because it contains potentially identifying information; it is available from the corresponding author on reasonable request, subject to ethics committee approval.
 
 ## Competing interests
 

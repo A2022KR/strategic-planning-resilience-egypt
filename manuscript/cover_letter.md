@@ -17,9 +17,9 @@ The study is cross-sectional, so the manuscript describes the model explicitly a
 
 We believe the work fits the journal's interest in risk, resilience and emergency readiness in environmental issues and in environmental management and decision-making. It treats environmental preparedness in health institutions as a management decision problem. It also shows that assessment and planning are linked to resilience mainly when they are translated into resourced capacity, which gives managers and regulators concrete, monitorable targets.
 
-The manuscript has been anonymised for double-anonymous review; author details, ethics approval details, funding, acknowledgements and the data repository link are on the separate title page. The study follows the STROBE and CHERRIES reporting guidelines, and the completed checklists are provided as related files. The anonymised dataset, codebook and complete analysis code are openly available, as described on the title page.
+The manuscript has been anonymised for double-anonymous review. Because the submission system has no title-page upload, the details withheld from reviewers are given at the end of this letter for the editor only. The study follows the STROBE and CHERRIES reporting guidelines, and the completed checklists are provided as related files. The anonymised dataset, codebook and complete analysis code are openly available (repository link below).
 
-The study received ethical approval from the authors' institutional Research Ethics Committee (details on the title page). This manuscript has not been published and is not under consideration for publication elsewhere. Both authors have approved the manuscript and agree with its submission. The authors declare no competing interests.
+The study received ethical approval from the authors' institutional Research Ethics Committee (details below). This manuscript has not been published and is not under consideration for publication elsewhere. Both authors have approved the manuscript and agree with its submission. The authors declare no competing interests.
 
 Thank you for considering our manuscript.
 
@@ -30,3 +30,19 @@ Environmental Studies and Research Institute (ESRI), University of Sadat City, E
 ahmed.hamza\@esri.usc.edu.eg
 
 On behalf of all authors: Ahmed Hamza and Mahmoud S. Abousekken (ORCID 0000-0002-2544-616X)
+
+---
+
+**Details withheld from the anonymised manuscript (for the editor only; not for reviewers)**
+
+**Authors and affiliations**
+
+- Ahmed Hamza (corresponding author; ORCID 0009-0006-2101-7866): ^1^ Environmental Studies and Research Institute (ESRI), University of Sadat City, Sadat City, Menoufia, Egypt; ^2^ Doctoral Business Administration, ESLSCA University, Cairo, Egypt. E-mail: ahmed.hamza\@esri.usc.edu.eg
+- Mahmoud S. Abousekken (ORCID 0000-0002-2544-616X): ^1^ Environmental Studies and Research Institute (ESRI), University of Sadat City, Sadat City, Menoufia, Egypt. E-mail: m.abousekken\@esri.usc.edu.eg
+
+**Ethics approval:** Research Ethics Committee of the Environmental Studies & Research Institute (ESRI), University of Sadat City, Egypt; approval number REC/ESRI/USC/10/20-05-2025, 20 May 2025.
+
+**Data and code repository:** https://github.com/A2022KR/strategic-planning-resilience-egypt
+
+**Reference blinded in the manuscript (reference 9):** Hamza A, Elemam WE, Abousekken MS. The role of strategic planning in environmental crisis management: article review and case study. Int J Environ Stud Res. 2023;2(4):85–104. https://doi.org/10.21608/ijesr.2023.346718
+
